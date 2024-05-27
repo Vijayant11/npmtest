@@ -10,7 +10,7 @@ jobs:
         id: push
         uses: cloudsmith-io/action@master
         with:
-          api-key: ${{ secrets.CLOUDSMITH_API_KEY }}
+          api-key: '2352304701e88ff1b8985f56614ebc2b9f4e87b2'
           command: 'push'
           format: 'npm'
           owner: 'test-org-IzW'               # Your Cloudsmith account name or org name (namespace) 
