@@ -17,3 +17,4 @@ jobs:
           repo: 'BHSTest'           # Your Cloudsmith Repository name (slug)
           republish: 'true'            # needed ONLY if version is not changing
           file: 'csm-cloudsmith-npm-cli-1.0.1716809128647552.tgz' # npm filename
+          no-wait-for-sync: 'true'
