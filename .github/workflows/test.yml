@@ -1,0 +1,14 @@
+          # Publish the artifacts
+      - name: "Push artifact to package repository"
+        uses: BartoszBlizniak/action@master
+        with:
+          api-key: '2352304701e88ff1b8985f56614ebc2b9f4e87b2'
+          command: 'push'
+          format: 'npm'
+          owner: 'test-org-IzW'              # Your Cloudsmith account name or org name (namespace)
+          repo: 'BHSTest'                                  # Your Cloudsmith Repository name (slug)
+          distro: 'any-distro'                              # Use "any-distro" since our package is compatible with more than more distribution
+          release: 'any-version'                            # Use "any-version" since our package is compatible with more than more version
+          republish: 'true'                                 # Needed if version is not changing
+          file: 'csm-cloudsmith-npm-cli-1.0.1716809128647552.tgz'          # Package filename (including path)
+          no-wait-for-sync: 'true'                          # Skip the waiting for package synchronisation (i.e. upload only)
