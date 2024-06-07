@@ -1,6 +1,6 @@
           # Publish the artifacts
       - name: "Push artifact to package repository"
-        uses: BartoszBlizniak/action@master
+        uses: BartoszBlizniak/action@v0.5.4
         with:
           api-key: '2352304701e88ff1b8985f56614ebc2b9f4e87b2'
           command: 'push'
